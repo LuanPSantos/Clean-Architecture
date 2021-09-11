@@ -1,4 +1,4 @@
-package codeplays.trainee.cleanarch.infra.view;
+package codeplays.trainee.cleanarch.infra.adapter.presenter;
 
 public class ViewModel {
 

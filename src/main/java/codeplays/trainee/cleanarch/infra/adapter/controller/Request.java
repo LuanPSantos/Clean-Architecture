@@ -1,4 +1,4 @@
-package codeplays.trainee.cleanarch.infra.adapter;
+package codeplays.trainee.cleanarch.infra.adapter.controller;
 
 public class Request {
     private final String data;

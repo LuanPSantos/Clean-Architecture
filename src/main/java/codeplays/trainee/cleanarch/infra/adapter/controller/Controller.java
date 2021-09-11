@@ -1,4 +1,4 @@
-package codeplays.trainee.cleanarch.infra.adapter;
+package codeplays.trainee.cleanarch.infra.adapter.controller;
 
 import codeplays.trainee.cleanarch.domain.usecase.InputPort;
 import codeplays.trainee.cleanarch.domain.usecase.RequestModel;

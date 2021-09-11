@@ -1,9 +1,7 @@
-package codeplays.trainee.cleanarch.infra.adapter;
+package codeplays.trainee.cleanarch.infra.adapter.presenter;
 
 import codeplays.trainee.cleanarch.domain.usecase.OutputPort;
 import codeplays.trainee.cleanarch.domain.usecase.ResponseModel;
-import codeplays.trainee.cleanarch.infra.view.ViewModel;
-import codeplays.trainee.cleanarch.infra.view.ViewWriter;
 
 public class Presenter implements OutputPort {
 
