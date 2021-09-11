@@ -5,14 +5,14 @@ import codeplays.trainee.cleanarch.domain.usecase.ResponseModel;
 
 public class Presenter implements OutputPort {
 
-    private final ViewWriter viewWriter;
+    private final ViewAdapter viewAdapter;
 
-    public Presenter(ViewWriter viewWriter) {
-        this.viewWriter = viewWriter;
+    public Presenter(ViewAdapter viewAdapter) {
+        this.viewAdapter = viewAdapter;
     }
 
     @Override
     public void apply(ResponseModel output) {
-        viewWriter.write(new ViewModel(output.getData()));
+        viewAdapter.write(new ViewModel(output.getData()));
     }
 }
