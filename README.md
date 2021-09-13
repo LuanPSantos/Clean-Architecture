@@ -143,7 +143,7 @@ Note que a implementação de *SomeGateway*, que é uma *Entity*, está na camad
 
 Como cada caso de uso é responsável por um ator, logo, toda essa estrutura é feita para uma funcionalidade que esse ator poderá interagir.
 
-##Conclusão
+## Conclusão
 
 A Arquitetura Limpa é um modelo de arquitetura, que surge naturalmente da aplicação dos princípios SOLID e da regra da dependência. E é complementada com os princípios de Componentes. Seu objetivo é propor um modelo de referência de como criar aplicações independentes de frameworks, UI, banco de dados e qualquer agência externa. Por ser independente, se torna fácil e barata de se testar. Garante extensibilidade e protege as políticas de alto nível, tornando-as mais estáveis.
 
