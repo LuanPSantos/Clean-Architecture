@@ -83,7 +83,7 @@ A “síndrome da manhã seguinte” é o efeito colateral da quebra deste princ
 
 Para quebrar esse ciclo, usa-se inversão de dependências, fazendo com que as setas de dependências apontem todas para a mesma direção.
 
-## O Princípio de dependências estáveis
+### O Princípio de dependências estáveis
 
 **“Dependa na direção da estabilidade”**
 
