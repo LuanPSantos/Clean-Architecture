@@ -148,9 +148,9 @@ Como cada caso de uso é responsável por um ator, logo, toda essa estrutura é 
 A Arquitetura Limpa é um modelo de arquitetura, que surge naturalmente da aplicação dos princípios SOLID e da regra da dependência. E é complementada com os princípios de Componentes. Seu objetivo é propor um modelo de referência de como criar aplicações independentes de frameworks, UI, banco de dados e qualquer agência externa. Por ser independente, se torna fácil e barata de se testar. Garante extensibilidade e protege as políticas de alto nível, tornando-as mais estáveis.
 
 
-##REFERÊNCIAS
+## REFERÊNCIAS
 
-###Robert C. Martin - Arquitetura Limpa (Livro)
+### Robert C. Martin - Arquitetura Limpa (Livro)
 
 [Full Cycle - Clean Architecture](https://youtu.be/BuSf7VsH064)
 
