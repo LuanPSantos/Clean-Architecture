@@ -139,7 +139,7 @@ Esse diagrama é baseado nos diagramas apresentados no livro nas páginas 208 e 
 
 Primeiro, a *View* realiza uma *Request* para um *Controller*, que monta o *Request Model* e passa o mesmo para o *Use Case*, através da sua interface de entrada *InputPort,* que orquestra as *Entities*. Ao final, realiza uma chamada ao *OutputPort,* cujo a implementação é o *Presenter*, responsável por montar o *Response Model* e repassá-lo para a *View.*
 
-Note que a implementação de *SomeGateway*, que é uma *Entity*, está na camada de Interface Adapters. Nesse ponto foi realizada uma inversão de dependência para não quebrar a regra da dependência. Ao mesmo passo, ganha-se extensibilidade, visto que pode haver mais de uma implementação para *SomeGatway*. Assim fica fácil trocar a busca de um dado em um banco de dados por uma busca a um outro serviço web, por exemplo. Portanto, todas as dependências sempre apontam para uma camada com uma política de nível maior.
+Note que a implementação de *Gateway*, que é uma *Entity*, está na camada de Interface Adapters. Nesse ponto foi realizada uma inversão de dependência para não quebrar a regra da dependência. Ao mesmo passo, ganha-se extensibilidade, visto que pode haver mais de uma implementação para *Gatway*. Assim fica fácil trocar a busca de um dado em um banco de dados por uma busca a um outro serviço web, por exemplo. Portanto, todas as dependências sempre apontam para uma camada com uma política de nível maior.
 
 Como cada caso de uso é responsável por um ator, logo, toda essa estrutura é feita para uma funcionalidade que esse ator poderá interagir.
 
