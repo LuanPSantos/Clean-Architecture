@@ -5,14 +5,14 @@
 
 O Princípio da Inversão de Dependência diz que **“os sistemas mais flexíveis são aqueles em que as dependências de código-fonte se referem apenas a abstrações e não a itens concretos”**. De forma mais precisa, não queremos depender de itens concretos e voláteis dos _nossos_ sistemas. Implementações concretas como a classe String, por exemplo, não são um problema, já que elas dificilmente vão mudar.
 Elementos de níveis mais altos, mais próximos à regra de negócio (o que chamaremos de Entidades), devem ser mais estáveis e mais abstratos. Garantimos isso aplicando o Princípio da Inversão de Dependência.
-Para aplicar a inversão de dependência, cria-se uma abstração para definir um contrato, que deverá ser implementado por uma camada de nível mais baixo. Dessa forma, a seta de dependência inverte sua direção.
+Para aplicar a inversão de dependência, cria-se uma abstração para definir um contrato (uma _interface_), que deverá ser implementado por uma camada de nível mais baixo. Dessa forma, a seta de dependência inverte sua direção.
 
 ![Diagrama DIP](imgs/inversao-dependencia.png)
 
 ### Princípio da Responsabilidade Única (SRP)
 
 O Princípio da Responsabilidade Única diz que **“um módulo só deve ter uma, e apenas uma, razão para mudar”**. Mas essa definição, segundo o livro, na verdade cabe apenas às funções/métodos.
-Um software existe para atender as demandas de usuários ou stakeholders, que podem fazer parte de grupos conhecidos pela definição de negócio (ex: usuário comum ou admin, CTO ou CEO). Cada grupo desse pode ser referido com um Ator. Ou seja, o código fonte do sistema deve ser separado e agrupado baseando-se em cada ator que utiliza o sistema. Dessa forma, a definição correta do SRP é:
+Um software existe para atender as demandas de usuários ou stakeholders, que podem fazer parte de grupos conhecidos pela definição de negócio (ex: usuário comum ou admin, CTO, CEO ou outros softwares). Cada grupo desse é um Ator. O código fonte do sistema deve ser separado e agrupado baseando-se em cada ator que utiliza o sistema. Dessa forma, a definição correta do SRP é:
 
 **“Um módulo deve ser responsável por um, e apenas um, ator”.**
 
@@ -24,7 +24,7 @@ O Princípio de Segregação de Interfaces busca orientar o desenvolvimento de f
 
 O Princípio da Substituição de Liskov diz que **“se, para cada objeto o1 do tipo S existir um objeto o2 do tipo T, de modo que todo programa P definido em termos de T, o comportamento de P é inalterado quando o1 é substituído por o2, então S é um subtipo de T.”**
 
-Esse princípio é sobre heranças. É um guia para garantir que os subtipos possam ser substituídos com segurança, sem alterar o comportamento do programa. E para garantir isso, é necessário conhecer como o sistema deve funcionar, sobre o negócio, para se realizar code review e criar testes efetivos.
+Esse princípio é sobre heranças. É um guia para garantir que os subtipos possam ser substituídos com segurança, sem alterar o comportamento do programa. E para garantir isso, é necessário conhecer como o sistema deve funcionar, conhecer sobre o negócio para se realizar code review e criar testes efetivos.
 
 **O problema do quadrado/retângulo**
 
@@ -38,7 +38,7 @@ Um quadrado (Square) não é uma extensão válida de um retângulo (Rectangle).
 
 O Princípio Aberto Fechado diz que **“Um artefato de software deve ser aberto para extensão, mas fechado para modificação”**. Esse princípio é muito bem aplicado à classes e módulos, mas também tem muita importância no nível de componentes arquiteturais. “Uma boa arquitetura de software deve reduzir a quantidade de código a ser mudado para o mínimo possível. Zero seria o ideal”.
 
-Este princípio é o mais dependente dos outros, quase uma consequência. Principalmente do Princípio da Responsabilidade Única e do Princípio da Inversão de Dependências, que, quando aplicados, separam as responsabilidades em artefatos coesos e protege artefatos de níveis mais altos dos artefatos de níveis mais baixos, respectivamente. Portanto, os artefatos de níveis mais altos são os mais fechados à mudanças e abertos a extensões.
+Este princípio é o mais dependente dos outros, quase uma consequência; principalmente do Princípio da Responsabilidade Única e do Princípio da Inversão de Dependências, que, quando aplicados, separam as responsabilidades em artefatos coesos e protege artefatos de níveis mais altos dos artefatos de níveis mais baixos, respectivamente. Portanto, os artefatos de níveis mais altos são os mais fechados à mudanças e abertos a extensões.
 
 ## COMPONENTES
 
